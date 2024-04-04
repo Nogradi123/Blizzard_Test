@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="157aec37-2e6d-4981-9228-af61922f9552" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/me/following/contains Test Case" searchProperties="true" timeout="0">
+  <con:description id="1dae6b52-1100-4bc0-8628-3f28b267271d">The test case generated for the REST resource [/me/following/contains] located at [/me/following/contains]</con:description>
+  <con:settings>
+    <con:setting id="157aec37-2e6d-4981-9228-af61922f9552fileName">%2Fme%2Ffollowing%2Fcontains-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="fe631c50-1b08-426e-9c7c-a97c33859c52">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/me/following/contains" methodName="check-current-user-follows" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="47be5715-da1b-4e6f-b303-b684ad0b4453" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

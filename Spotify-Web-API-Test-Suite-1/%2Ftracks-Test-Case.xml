@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="88e8256c-1e66-4403-b464-a8abc41fe4f1" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/tracks Test Case" searchProperties="true" timeout="0">
+  <con:description id="a66687af-ee0b-471a-b520-5eacc6b9a360">The test case generated for the REST resource [/tracks] located at [/tracks]</con:description>
+  <con:settings>
+    <con:setting id="88e8256c-1e66-4403-b464-a8abc41fe4f1fileName">%2Ftracks-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="d145d924-0303-49ac-9b67-2aee88b77626">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/tracks" methodName="get-several-tracks" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="adf43263-a117-457a-800f-69b5f5d5c667" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/tracks</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

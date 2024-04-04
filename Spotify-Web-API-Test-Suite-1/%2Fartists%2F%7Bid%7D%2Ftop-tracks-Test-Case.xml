@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="dc183a9c-95c6-43a9-8896-17cf5e320fa5" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/artists/{id}/top-tracks Test Case" searchProperties="true" timeout="0">
+  <con:description id="fbe7d767-808f-4cac-af74-139bf8d936b0">The test case generated for the REST resource [/artists/{id}/top-tracks] located at [/artists/{id}/top-tracks]</con:description>
+  <con:settings>
+    <con:setting id="dc183a9c-95c6-43a9-8896-17cf5e320fa5fileName">%2Fartists%2F%7Bid%7D%2Ftop-tracks-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="2fc9d11c-587f-489d-aee0-4049496c7fc8">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/artists/{id}/top-tracks" methodName="get-an-artists-top-tracks" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="1da83a5d-eeb0-47be-a27a-8d82511ec0c0" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

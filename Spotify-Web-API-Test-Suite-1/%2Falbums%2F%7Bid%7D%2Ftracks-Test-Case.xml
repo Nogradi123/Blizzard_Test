@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="37681a91-3917-41b7-9148-b0673d482393" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/albums/{id}/tracks Test Case" searchProperties="true" timeout="0">
+  <con:description id="aef60c2f-f05b-49dc-a3db-85125614ef73">The test case generated for the REST resource [/albums/{id}/tracks] located at [/albums/{id}/tracks]</con:description>
+  <con:settings>
+    <con:setting id="37681a91-3917-41b7-9148-b0673d482393fileName">%2Falbums%2F%7Bid%7D%2Ftracks-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="7fa55976-b0da-48b6-bde8-f480043c07f6">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/albums/{id}/tracks" methodName="get-an-albums-tracks" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="ad0a2f4c-ad2a-4b69-8039-b88ec646a9ce" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

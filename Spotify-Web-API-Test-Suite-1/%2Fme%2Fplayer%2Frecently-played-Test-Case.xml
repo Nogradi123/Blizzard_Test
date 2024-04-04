@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="f415c0c6-3888-4df3-bc7a-dbd3557f435b" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/me/player/recently-played Test Case" searchProperties="true" timeout="0">
+  <con:description id="68769f47-e5ef-4cab-a821-aa3d9c0be747">The test case generated for the REST resource [/me/player/recently-played] located at [/me/player/recently-played]</con:description>
+  <con:settings>
+    <con:setting id="f415c0c6-3888-4df3-bc7a-dbd3557f435bfileName">%2Fme%2Fplayer%2Frecently-played-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="a0a7700a-208e-4e7b-8335-7bcd48f0c290">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/me/player/recently-played" methodName="get-recently-played" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="b734c44d-a981-4eaa-b052-a812c80619e9" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

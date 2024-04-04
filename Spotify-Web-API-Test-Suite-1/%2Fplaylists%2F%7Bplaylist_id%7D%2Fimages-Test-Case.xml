@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="4e3ca17f-4d62-4b66-b337-08ab8253729b" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/playlists/{playlist_id}/images Test Case" searchProperties="true" timeout="0">
+  <con:description id="629d6ddb-f219-4cdc-a757-c82abe8df14a">The test case generated for the REST resource [/playlists/{playlist_id}/images] located at [/playlists/{playlist_id}/images]</con:description>
+  <con:settings>
+    <con:setting id="4e3ca17f-4d62-4b66-b337-08ab8253729bfileName">%2Fplaylists%2F%7Bplaylist_id%7D%2Fimages-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="e89163ff-f8ae-4a71-a548-75d96f183e9f">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/playlists/{playlist_id}/images" methodName="get-playlist-cover" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="5cf6cb2f-ba58-4835-ae49-aec43c2677ae" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="43da173b-4965-4ca1-82d4-b0964a7163be">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/playlists/{playlist_id}/images" methodName="upload-custom-playlist-cover" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 2" id="9d60725c-6adb-4cae-ab6a-0e5829b304d0" mediaType="image/jpeg">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

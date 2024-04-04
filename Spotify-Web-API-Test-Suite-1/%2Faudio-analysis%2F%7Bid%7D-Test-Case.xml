@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="be78d22f-482e-4c37-8676-ae2a1f1f46d4" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/audio-analysis/{id} Test Case" searchProperties="true" timeout="0">
+  <con:description id="ac6c3bf7-adc7-4af0-b9b6-e18704bac1bf">The test case generated for the REST resource [/audio-analysis/{id}] located at [/audio-analysis/{id}]</con:description>
+  <con:settings>
+    <con:setting id="be78d22f-482e-4c37-8676-ae2a1f1f46d4fileName">%2Faudio-analysis%2F%7Bid%7D-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="3e4ed32b-bc2a-443a-b93a-bb6888318957">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/audio-analysis/{id}" methodName="get-audio-analysis" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="16420a1b-3f9f-4b88-b91f-c7f832acbd71" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

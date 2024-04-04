@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="06d66e29-b19c-4419-b028-1fcfb4b395bb" name="Spotify Web API Test Suite 1">
+  <con:description id="75eea26a-6c9d-44a7-96e7-22489c2cd889">The test suite generated for the REST service [Spotify Web API]</con:description>
+  <con:settings id="d1a8ad6a-8b18-4fe2-ab08-6704245657dc">
+    <con:setting id="06d66e29-b19c-4419-b028-1fcfb4b395bbfileName">Spotify-Web-API-Test-Suite-1</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testSuite>

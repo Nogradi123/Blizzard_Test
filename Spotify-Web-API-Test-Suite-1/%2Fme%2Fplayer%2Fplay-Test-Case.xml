@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="c6a8a7dd-1ce0-40b1-8b64-6d52f481b6cd" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/me/player/play Test Case" searchProperties="true" timeout="0">
+  <con:description id="7114a87f-c45e-4c88-8b77-c821e6c6d924">The test case generated for the REST resource [/me/player/play] located at [/me/player/play]</con:description>
+  <con:settings>
+    <con:setting id="c6a8a7dd-1ce0-40b1-8b64-6d52f481b6cdfileName">%2Fme%2Fplayer%2Fplay-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="0f853bfa-1321-4698-a18d-4e1f07602ec3">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/me/player/play" methodName="start-a-users-playback" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="a3410f08-47e5-408d-a69a-6bd42041b701" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request>{\r
+  "context_uri" : "spotify:album:5ht7ItJgpBH7W6vJ5BqpPr",\r
+  "offset" : {\r
+    "position" : 5\r
+  },\r
+  "position_ms" : 0\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

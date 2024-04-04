@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="76c27a85-a176-4a4f-ae89-5e6e32a1b440" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/artists Test Case" searchProperties="true" timeout="0">
+  <con:description id="630efc2e-e14b-43e0-b70c-d7779e64f4f8">The test case generated for the REST resource [/artists] located at [/artists]</con:description>
+  <con:settings>
+    <con:setting id="76c27a85-a176-4a4f-ae89-5e6e32a1b440fileName">%2Fartists-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="d9f170be-a43d-48ef-983e-b1922497a26d">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/artists" methodName="get-multiple-artists" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="f42dd8d2-cdad-4ffb-a4d8-1aa735674f55" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/artists</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="ids" value="kid cudi"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

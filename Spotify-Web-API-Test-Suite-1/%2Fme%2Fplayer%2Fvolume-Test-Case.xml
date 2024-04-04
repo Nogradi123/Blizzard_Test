@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="a72b01cd-0765-4c20-a9dd-f901c702b5ab" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/me/player/volume Test Case" searchProperties="true" timeout="0">
+  <con:description id="1aed8f36-ac0c-48d2-be3f-ff702c8fadde">The test case generated for the REST resource [/me/player/volume] located at [/me/player/volume]</con:description>
+  <con:settings>
+    <con:setting id="a72b01cd-0765-4c20-a9dd-f901c702b5abfileName">%2Fme%2Fplayer%2Fvolume-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="f923a136-b87a-46d6-af21-b2ac18a528dc">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/me/player/volume" methodName="set-volume-for-users-playback" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="65f67f4f-c4cd-45f9-8a9b-acc08596f760" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

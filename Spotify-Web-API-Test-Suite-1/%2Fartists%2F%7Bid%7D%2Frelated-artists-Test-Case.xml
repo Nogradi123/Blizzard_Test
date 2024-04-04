@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="122c5c34-1cb9-41bc-968e-6defd904bdac" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/artists/{id}/related-artists Test Case" searchProperties="true" timeout="0">
+  <con:description id="483a93a2-64d0-4ddc-b437-78c9ab0f934f">The test case generated for the REST resource [/artists/{id}/related-artists] located at [/artists/{id}/related-artists]</con:description>
+  <con:settings>
+    <con:setting id="122c5c34-1cb9-41bc-968e-6defd904bdacfileName">%2Fartists%2F%7Bid%7D%2Frelated-artists-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="0a0b0e70-77ee-49f6-b827-3c7e10e38d6b">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/artists/{id}/related-artists" methodName="get-an-artists-related-artists" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="249be0fa-1a14-4dcd-b7d0-7ff8ed31a5d9" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

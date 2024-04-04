@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="b3fed377-c018-43ff-bf89-e814fb6c9b55" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/episodes Test Case" searchProperties="true" timeout="0">
+  <con:description id="0c11bed1-1b11-4ead-9527-b8a60d9479bd">The test case generated for the REST resource [/episodes] located at [/episodes]</con:description>
+  <con:settings>
+    <con:setting id="b3fed377-c018-43ff-bf89-e814fb6c9b55fileName">%2Fepisodes-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="6af003b6-d7e5-4d94-a6e5-b00fba7c4590">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/episodes" methodName="get-multiple-episodes" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="2f515363-5286-4519-af34-2dc91bd0025d" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="2cf9f51c-5721-4015-8bed-3f496a460bc2" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/albums/{id} Test Case" searchProperties="true" timeout="0">
+  <con:description id="5687bfa7-5cd2-4321-9010-7901a62a48ee">The test case generated for the REST resource [/albums/{id}] located at [/albums/{id}]</con:description>
+  <con:settings>
+    <con:setting id="2cf9f51c-5721-4015-8bed-3f496a460bc2fileName">%2Falbums%2F%7Bid%7D-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="f4f8d087-59f0-48ce-98ef-0adc8534356d">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/albums/{id}" methodName="get-an-album" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="2fd49bec-d67d-4865-a65e-53480ed3acbd" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/albums/led%20zepplin</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="market" value="US"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

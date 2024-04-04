@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="51f9c65b-b77a-4125-864c-e1a1c34b4aa7" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/artists/{id} Test Case" searchProperties="true" timeout="0">
+  <con:description id="bd1fe96b-e35c-4dd3-b598-b9649faae928">The test case generated for the REST resource [/artists/{id}] located at [/artists/{id}]</con:description>
+  <con:settings>
+    <con:setting id="51f9c65b-b77a-4125-864c-e1a1c34b4aa7fileName">%2Fartists%2F%7Bid%7D-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="846fdce9-2815-43d4-a15f-80115bd20a9f">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/artists/{id}" methodName="get-an-artist" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="d98a2dfc-4d5f-4ad3-9461-4bda0d74ca3d" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

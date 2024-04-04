@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="d07fcfab-4c11-4315-a1a8-f9dff1dbbedd" created="3.47.0" activeEnvironment="Default environment" encryptionMode="Not encrypted" name="Spotify API Project" projectVersion="" updated="3.49.0" authProfile="Spotify Academy" resourceRoot="" compositeProjectFormat="1.3">
+  <con:settings>
+    <con:setting id="d07fcfab-4c11-4315-a1a8-f9dff1dbbeddfileName">TestSH-readyapi-project</con:setting>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Settings File Password" value=""/>
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="Spotify Web API Test Suite 1"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="/albums Test Case"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-3.49.0\bin"/>
+  <con:entry key="Environment" value="No Environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer>
+    <con:oAuth2Profile>
+      <con:name>oauth_2_0 AUTHORIZATION</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>https://accounts.spotify.com/authorize</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:scope>app-remote-control playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify user-read-private user-read-email user-follow-read user-follow-modify user-top-read user-read-playback-position user-read-playback-state user-read-recently-played user-read-currently-playing user-modify-playback-state ugc-image-upload streaming</con:scope>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+    <con:oAuth2Profile>
+      <con:name>Spotify Academy</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>https://accounts.spotify.com/authorize</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
+      <con:redirectURI>http://localhost:8080/callback</con:redirectURI>
+      <con:accessToken>BQAu-5h8bqEIRcTiolNY0dsk7Nu0lYG2MFAQLFaHrNaw1q_4F-_i4nr1NAnK_oeHC0OBT_S9RAT3FZPAjziHZMrOJkdtgjcLtPCQIV-Bp3URu1VJXJFQMvI-z2Jk6LBIkR5v3BvjYEBlFAjsCjZSVTsimiTqebwuB0mj4rFq2cy-140PcYdlpLRqva5xf60KIHlPHsJHOZnV8ZdHqY8T2dBnYMlYJMwbcJ_m-gG4PbJpShtE</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
+      <con:accessTokenIssuedTime>1711391306</con:accessTokenIssuedTime>
+      <con:clientID>bba5fc5873864ad0ae672ebeaf97fa5c</con:clientID>
+      <con:clientSecret>282a8aca9d93464f8105997ec416b975</con:clientSecret>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:refreshToken>AQDt0J1tih2_ytt-7JnCCco5yjcpKx_HyRw66zVfvuC2JSIFQfJirj4gKW_v7Zlh7tyQAOlP9ZgcXq_gi6WkgVNx-65ufGnLuBr9uwcu0nvWqLpJGmaiyK0UUJokQglCRBE</con:refreshToken>
+      <con:scope>user-read-playback-state user-modify-playback-state user-read-currently-playing app-remote-control user-read-playback-position user-read-recently-played user-library-modify user-library-read</con:scope>
+      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:useAuthHeader>true</con:useAuthHeader>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+  </con:oAuth2ProfileContainer>
+  <con:oAuth1ProfileContainer/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:environment id="03144120-4678-48ed-b47f-929e8e906fd7" name="wed" index="0">
+    <con:service type="REST" name="Spotify Web API">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://api.spotify.com/v1</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:authRepository>
+    <con:oAuth20AuthEntry>
+      <con:name>oauth_2_0 AUTHORIZATION</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>https://accounts.spotify.com/authorize</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:scope>app-remote-control playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify user-read-private user-read-email user-follow-read user-follow-modify user-top-read user-read-playback-position user-read-playback-state user-read-recently-played user-read-currently-playing user-modify-playback-state ugc-image-upload streaming</con:scope>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
+    <con:oAuth20AuthEntry>
+      <con:name>Spotify Academy</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>https://accounts.spotify.com/authorize</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
+      <con:redirectURI>http://localhost:8080/callback</con:redirectURI>
+      <con:accessToken>BQAu-5h8bqEIRcTiolNY0dsk7Nu0lYG2MFAQLFaHrNaw1q_4F-_i4nr1NAnK_oeHC0OBT_S9RAT3FZPAjziHZMrOJkdtgjcLtPCQIV-Bp3URu1VJXJFQMvI-z2Jk6LBIkR5v3BvjYEBlFAjsCjZSVTsimiTqebwuB0mj4rFq2cy-140PcYdlpLRqva5xf60KIHlPHsJHOZnV8ZdHqY8T2dBnYMlYJMwbcJ_m-gG4PbJpShtE</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
+      <con:accessTokenIssuedTime>1711391306</con:accessTokenIssuedTime>
+      <con:clientID>bba5fc5873864ad0ae672ebeaf97fa5c</con:clientID>
+      <con:clientSecret>282a8aca9d93464f8105997ec416b975</con:clientSecret>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:refreshToken>AQDt0J1tih2_ytt-7JnCCco5yjcpKx_HyRw66zVfvuC2JSIFQfJirj4gKW_v7Zlh7tyQAOlP9ZgcXq_gi6WkgVNx-65ufGnLuBr9uwcu0nvWqLpJGmaiyK0UUJokQglCRBE</con:refreshToken>
+      <con:scope>user-read-playback-state user-modify-playback-state user-read-currently-playing app-remote-control user-read-playback-position user-read-recently-played user-library-modify user-library-read</con:scope>
+      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:useAuthHeader>true</con:useAuthHeader>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
+  </con:authRepository>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tags/>
+</con:soapui-project>

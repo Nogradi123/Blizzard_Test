@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="5d314869-3583-4e58-bd37-331cddd85bbe" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/playlists/{playlist_id}/followers Test Case" searchProperties="true" timeout="0">
+  <con:description id="bd9c3791-eec9-4753-afe9-269323300b68">The test case generated for the REST resource [/playlists/{playlist_id}/followers] located at [/playlists/{playlist_id}/followers]</con:description>
+  <con:settings>
+    <con:setting id="5d314869-3583-4e58-bd37-331cddd85bbefileName">%2Fplaylists%2F%7Bplaylist_id%7D%2Ffollowers-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="603da056-35bc-4ae1-88bc-3eb6581aa1bd">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/playlists/{playlist_id}/followers" methodName="unfollow-playlist" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="7f36f3eb-e754-466e-815f-f5c3c5ab6334" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="f9d96145-1e7e-427d-b4ec-2998dff99387">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/playlists/{playlist_id}/followers" methodName="follow-playlist" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 2" id="6cc7d836-e28b-4149-af59-0bac6315c036" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request>{\r
+  "public" : false\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

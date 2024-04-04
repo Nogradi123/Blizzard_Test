@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="6e95bc38-c8a4-40bb-aa82-f8485498ca0e" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/me/player Test Case" searchProperties="true" timeout="0">
+  <con:description id="6b9e0b66-acee-4db6-a1a4-3c9f3c593d4f">The test case generated for the REST resource [/me/player] located at [/me/player]</con:description>
+  <con:settings>
+    <con:setting id="6e95bc38-c8a4-40bb-aa82-f8485498ca0efileName">%2Fme%2Fplayer-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="0f166e5e-1cbc-4ce0-8d0a-1af9dc27e464">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/me/player" methodName="get-information-about-the-users-current-playback" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="6de762ce-f2d3-48cf-87ed-f61bb2d98300" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="45743e7f-bda2-4636-9082-1915d1297489">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/me/player" methodName="transfer-a-users-playback" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 2" id="ae036896-f4d8-4204-a848-3d943fe45364" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request>{\r
+  "device_ids" : [ "74ASZWbe4lXaubB36ztrGX" ]\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

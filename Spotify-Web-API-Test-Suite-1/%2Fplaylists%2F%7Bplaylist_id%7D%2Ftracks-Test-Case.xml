@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="4d1d118b-c2d7-48c2-959a-6a80225e795b" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/playlists/{playlist_id}/tracks Test Case" searchProperties="true" timeout="0">
+  <con:description id="38ce8c2f-60d7-491a-9786-d97a41a1ca9f">The test case generated for the REST resource [/playlists/{playlist_id}/tracks] located at [/playlists/{playlist_id}/tracks]</con:description>
+  <con:settings>
+    <con:setting id="4d1d118b-c2d7-48c2-959a-6a80225e795bfileName">%2Fplaylists%2F%7Bplaylist_id%7D%2Ftracks-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="db764305-46a2-4493-84e4-2ec979b0cc6e">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/playlists/{playlist_id}/tracks" methodName="get-playlists-tracks" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="4755ab93-364d-4b84-9ab3-f21f86b506c7" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="2b9e834f-94d5-4f7d-9960-4d7d68e78309">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/playlists/{playlist_id}/tracks" methodName="add-tracks-to-playlist" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 2" id="871be9d5-03f0-4f56-99ef-3e6d7ee7212f" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request>{\r
+  "uris" : [ "string" ],\r
+  "position" : 0\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 3" id="1b9367c0-d08d-48f0-a8fa-46e570d9b7ad">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/playlists/{playlist_id}/tracks" methodName="remove-tracks-playlist" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 3" id="0c0ac0f0-e34a-4c7b-8b77-38e736593001" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 4" id="841c3d94-fe63-4bbc-9dfa-3aea753cc3bc">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/playlists/{playlist_id}/tracks" methodName="reorder-or-replace-playlists-tracks" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 4" id="ee3d71e5-2837-44cb-aa57-5abfc1701fcb" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request>{\r
+  "range_start" : 1,\r
+  "insert_before" : 3,\r
+  "range_length" : 2\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

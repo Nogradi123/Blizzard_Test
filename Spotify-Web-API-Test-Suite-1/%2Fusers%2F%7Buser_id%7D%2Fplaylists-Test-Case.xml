@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="68865c8c-1c2e-414b-a3ac-fe3d4bc55a5e" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/users/{user_id}/playlists Test Case" searchProperties="true" timeout="0">
+  <con:description id="8deba951-2219-473c-8053-9899d35e8f65">The test case generated for the REST resource [/users/{user_id}/playlists] located at [/users/{user_id}/playlists]</con:description>
+  <con:settings>
+    <con:setting id="68865c8c-1c2e-414b-a3ac-fe3d4bc55a5efileName">%2Fusers%2F%7Buser_id%7D%2Fplaylists-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="b7d58a00-3974-41d5-a8a3-195c0791d7f9">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/users/{user_id}/playlists" methodName="get-list-users-playlists" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="f3861fcc-085a-4052-b416-70be9104acca" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="92128a99-7967-4ec0-a360-4e2a09df5413">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Spotify Web API" resourcePath="/users/{user_id}/playlists" methodName="create-playlist" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 2" id="42215bf0-a7cd-4761-b4b3-0aeb4203c82c" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request>{\r
+  "name" : "New Playlist",\r
+  "description" : "New playlist description",\r
+  "public" : false\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>
