@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="d07fcfab-4c11-4315-a1a8-f9dff1dbbedd" created="3.47.0" activeEnvironment="Default environment" encryptionMode="Not encrypted" name="Spotify API Project" projectVersion="" updated="3.49.0" authProfile="Spotify Academy" resourceRoot="" compositeProjectFormat="1.3">
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="d07fcfab-4c11-4315-a1a8-f9dff1dbbedd" created="3.47.0" activeEnvironment="Default environment" encryptionMode="Selected properties" name="Spotify API Project" projectVersion="" updated="3.51.0" authProfile="Spotify Academy" resourceRoot="" compositeProjectFormat="1.3">
   <con:settings>
     <con:setting id="d07fcfab-4c11-4315-a1a8-f9dff1dbbeddfileName">TestSH-readyapi-project</con:setting>
     <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -40,7 +40,18 @@
   <con:entry key="Save Project" value="false"/>
 </xml-fragment>]]></con:setting>
   </con:settings>
-  <con:properties/>
+  <con:properties>
+    <con:property encrypted="true">
+      <con:name>clientID</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>OU5ab0VmOFl2RDVQdy9sNk42VGY5dm5MTkM3MlFlWmZmanp0akNRQ2xUZjBWT3g2bm1lOXExQVBGcFQxcVdpSmpZdzZoK1RnblZmYw0KMkFheGZ3S2I1cXNCYlNqUmEyK1M3bVBXTVVPTTlGOFhKOFNqT05ZQnMzbUV1dEkwT0FOOE9OVU9FTGxKSVVRb200Wk1lTnpjeHc9PQ0K</con:encryptedContent>
+    </con:property>
+    <con:property encrypted="true">
+      <con:name>clientSecret</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>OU5ab0VmOFl2RDVQdy9sNk42VGY5dm5MTkM3MlFlWmZmanp0akNRQ2xUZjBWT3g2bm1lOXExQVBGcFQxcVdpSmpZdzZoK1RnblZjTA0KZXJZTloyRTNzeDVCMTBzdEhzVXFYQnVvNENXWDJiZjhMaVZ1VU5ZZGhTeWZqYjJwRlpZc2lFbWhRVnZ0SW1Md0ZvdC9DZTQ2QVE9PQ0K</con:encryptedContent>
+    </con:property>
+  </con:properties>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:jmsConnectionContainer/>
@@ -63,13 +74,14 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8080/callback</con:redirectURI>
-      <con:accessToken>BQAu-5h8bqEIRcTiolNY0dsk7Nu0lYG2MFAQLFaHrNaw1q_4F-_i4nr1NAnK_oeHC0OBT_S9RAT3FZPAjziHZMrOJkdtgjcLtPCQIV-Bp3URu1VJXJFQMvI-z2Jk6LBIkR5v3BvjYEBlFAjsCjZSVTsimiTqebwuB0mj4rFq2cy-140PcYdlpLRqva5xf60KIHlPHsJHOZnV8ZdHqY8T2dBnYMlYJMwbcJ_m-gG4PbJpShtE</con:accessToken>
+      <con:accessToken>BQDcrjdi5ZMcANYdDA1YmAF1SK81xCWKFStISwI75DnkoevJEu_8EtEeZHQ5ou5jE1tjUuIY5Wol_cCu0mo6TBldGbEqFIyG8Ad858HxFoDiGXAG0W8zxdfxKb5bb82KEWvEz8dxDbk3q3EJAx1YkJbbgZcQg9t8yHdrDmgviXEtrgpGGqV_lgP0RX7HWQcbj3TnPnmzSaDeuMEtH7z2VgViMNYPsrtV9cjcAhOA3BxrP67f</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1711391306</con:accessTokenIssuedTime>
-      <con:clientID>bba5fc5873864ad0ae672ebeaf97fa5c</con:clientID>
-      <con:clientSecret>282a8aca9d93464f8105997ec416b975</con:clientSecret>
+      <con:accessTokenIssuedTime>1713368814</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
+      <con:clientID>${#Project#clientID}</con:clientID>
+      <con:clientSecret>${#Project#clientSecret}</con:clientSecret>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:refreshToken>AQDt0J1tih2_ytt-7JnCCco5yjcpKx_HyRw66zVfvuC2JSIFQfJirj4gKW_v7Zlh7tyQAOlP9ZgcXq_gi6WkgVNx-65ufGnLuBr9uwcu0nvWqLpJGmaiyK0UUJokQglCRBE</con:refreshToken>
@@ -114,6 +126,16 @@
     <con:service type="REST" name="Spotify Web API">
       <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://api.spotify.com/v1</con:endpoint>
     </con:service>
+    <con:property>
+      <con:name>clientID</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>OU5ab0VmOFl2RDVQdy9sNk42VGY5dm5MTkM3MlFlWmZmanp0akNRQ2xUZjBWT3g2bm1lOXExQVBGcFQxcVdpSmpZdzZoK1RnblZjYw0KZ1JDQVVST25xQT09DQo=</con:encryptedContent>
+    </con:property>
+    <con:property>
+      <con:name>clientSecret</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>OU5ab0VmOFl2RDVQdy9sNk42VGY5dm5MTkM3MlFlWmZmanp0akNRQ2xUZjBWT3g2bm1lOXExQVBGcFQxcVdpSmpZdzZoK1RnblZjYw0KZ1JDQVVST25xQT09DQo=</con:encryptedContent>
+    </con:property>
     <con:databaseConnectionContainer/>
     <con:jmsConnectionContainer/>
   </con:environment>
@@ -136,13 +158,14 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8080/callback</con:redirectURI>
-      <con:accessToken>BQAu-5h8bqEIRcTiolNY0dsk7Nu0lYG2MFAQLFaHrNaw1q_4F-_i4nr1NAnK_oeHC0OBT_S9RAT3FZPAjziHZMrOJkdtgjcLtPCQIV-Bp3URu1VJXJFQMvI-z2Jk6LBIkR5v3BvjYEBlFAjsCjZSVTsimiTqebwuB0mj4rFq2cy-140PcYdlpLRqva5xf60KIHlPHsJHOZnV8ZdHqY8T2dBnYMlYJMwbcJ_m-gG4PbJpShtE</con:accessToken>
+      <con:accessToken>BQDcrjdi5ZMcANYdDA1YmAF1SK81xCWKFStISwI75DnkoevJEu_8EtEeZHQ5ou5jE1tjUuIY5Wol_cCu0mo6TBldGbEqFIyG8Ad858HxFoDiGXAG0W8zxdfxKb5bb82KEWvEz8dxDbk3q3EJAx1YkJbbgZcQg9t8yHdrDmgviXEtrgpGGqV_lgP0RX7HWQcbj3TnPnmzSaDeuMEtH7z2VgViMNYPsrtV9cjcAhOA3BxrP67f</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1711391306</con:accessTokenIssuedTime>
-      <con:clientID>bba5fc5873864ad0ae672ebeaf97fa5c</con:clientID>
-      <con:clientSecret>282a8aca9d93464f8105997ec416b975</con:clientSecret>
+      <con:accessTokenIssuedTime>1713368814</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
+      <con:clientID>${#Project#clientID}</con:clientID>
+      <con:clientSecret>${#Project#clientSecret}</con:clientSecret>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:refreshToken>AQDt0J1tih2_ytt-7JnCCco5yjcpKx_HyRw66zVfvuC2JSIFQfJirj4gKW_v7Zlh7tyQAOlP9ZgcXq_gi6WkgVNx-65ufGnLuBr9uwcu0nvWqLpJGmaiyK0UUJokQglCRBE</con:refreshToken>

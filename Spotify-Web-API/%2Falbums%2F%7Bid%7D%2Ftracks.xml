@@ -123,7 +123,9 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
 }</con:sampleContent>
     </con:representation>
     <con:request name="Request 1" id="ad0a2f4c-ad2a-4b69-8039-b88ec646a9ce" mediaType="application/json">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
       <con:credentials>
@@ -131,7 +133,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="market" value="ES"/>
+        <con:entry key="id" value="Led Zepplin"/>
+      </con:parameters>
       <con:environmentSpec>
         <con:entry environmentId="03144120-4678-48ed-b47f-929e8e906fd7">
           <con:authProfile>Inherit From Parent</con:authProfile>
